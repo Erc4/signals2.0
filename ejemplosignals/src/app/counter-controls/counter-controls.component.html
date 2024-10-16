@@ -1,0 +1,5 @@
+<button (click)="increment.emit()">+1</button>
+<button (click)="decrement.emit()">-1</button>
+<button (click)="reset.emit()">Reset Counter</button>
+<br><br>
+Multiplier: <input [ngModel]="multiplier()" (ngModelChange)="onMultiplierChange($event)" type="number">
